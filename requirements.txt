@@ -1,0 +1,11 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+firecrawl-py
+pandas
+python-dotenv
+streamlit
+requests
+xgboost
+scikit-learn
+numpy

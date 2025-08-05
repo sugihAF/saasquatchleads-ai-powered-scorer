@@ -1,0 +1,17 @@
+# Ignore the virtual environment
+venv/
+
+# Ignore Python bytecode and cache
+__pycache__/
+*.pyc
+
+# Ignore Git-related files
+.git/
+.gitignore
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
+
+# Ignore local environment file (will be injected at runtime)
+.env

@@ -1,0 +1,63 @@
+2025-08-04 16:37:38,183 - INFO - 🎯 STARTING G2 SCRAPING
+2025-08-04 16:37:38,183 - INFO - 📊 Target URL: https://www.g2.com/categories/crm
+2025-08-04 16:37:38,184 - INFO - 🔧 URL Type: <class 'str'>
+2025-08-04 16:37:38,184 - INFO - 🔑 API Key Status: Found (fc-e88378a...)
+2025-08-04 16:37:38,185 - INFO - 🚀 Initiating AsyncFirecrawlApp scraping...
+2025-08-04 16:37:41,362 - INFO - ✅ Firecrawl Response Received!
+2025-08-04 16:37:41,363 - INFO - ⏱️  Scraping Duration: 3.18s
+2025-08-04 16:37:41,363 - INFO - 📦 Response Type: <class 'firecrawl.firecrawl.ScrapeResponse'>
+2025-08-04 16:37:41,364 - INFO - 🔍 Response Attributes: ['url', 'markdown', 'html', 'rawHtml', 'links', 'extract', 'json', 'screenshot', 'metadata', 'actions', 'title', 'description', 'changeTracking', 'success', 'warning', 'error']
+2025-08-04 16:37:41,366 - WARNING - 🔍 Unexpected Response Structure - attempting to parse...
+2025-08-04 16:37:41,366 - INFO - 📦 Raw Response: url=None markdown='' html=None rawHtml=None links=None extract=None json=<function BaseModel.json at 0x7f0c8a7c5fc0> screenshot=None metadata={'og:image:secure_url': 'https://www.g2.com/assets/highest...
+2025-08-04 16:37:41,366 - WARNING - ⚠️  Falling back to mock data...
+2025-08-04 16:37:41,367 - INFO - 🔄 Returning 5 mock companies in 3.18s
+2025-08-04 16:37:41,367 - INFO - 🔍 ANALYZING HIRING INTENT
+2025-08-04 16:37:41,367 - INFO - 🌐 Target Website: https://samplecrm.com
+2025-08-04 16:37:41,368 - INFO - 🚀 Initiating website analysis...
+2025-08-04 16:37:45,354 - INFO - ✅ Website scraped successfully!
+2025-08-04 16:37:45,355 - INFO - ⏱️  Scraping Duration: 3.99s
+2025-08-04 16:37:45,355 - INFO - 🔄 Fallback hiring intent for https://samplecrm.com: True (processed in 3.99s)
+2025-08-04 16:37:45,356 - INFO - 📊 LEAD SCORING:
+2025-08-04 16:37:45,356 - INFO -    🎯 Base Score (Hiring Intent): 30
+2025-08-04 16:37:45,357 - INFO -    ⭐ Bonus Score: 10
+2025-08-04 16:37:45,357 - INFO -    🏆 Total Score: 40
+2025-08-04 16:37:45,357 - INFO - 🔍 ANALYZING HIRING INTENT
+2025-08-04 16:37:45,358 - INFO - 🌐 Target Website: https://anothercrm.com
+2025-08-04 16:37:45,358 - INFO - 🚀 Initiating website analysis...
+2025-08-04 16:37:49,187 - WARNING - ⚠️  Could not analyze https://anothercrm.com after 3.83s: Internal Server Error: Failed to make POST request. (Internal server error) - DNS resolution failed for hostname: anothercrm.com. Please check if the domain is valid and accessible. - No additional error details provided.
+2025-08-04 16:37:49,187 - WARNING - 🔍 Error Type: <class 'aiohttp.client_exceptions.ClientError'>
+2025-08-04 16:37:49,188 - INFO - 🔄 Fallback hiring intent for https://anothercrm.com: True (processed in 3.83s)
+2025-08-04 16:37:49,188 - INFO - 📊 LEAD SCORING:
+2025-08-04 16:37:49,188 - INFO -    🎯 Base Score (Hiring Intent): 30
+2025-08-04 16:37:49,189 - INFO -    ⭐ Bonus Score: 10
+2025-08-04 16:37:49,189 - INFO -    🏆 Total Score: 40
+2025-08-04 16:37:49,190 - INFO - 🔍 ANALYZING HIRING INTENT
+2025-08-04 16:37:49,190 - INFO - 🌐 Target Website: https://testsaas.com
+2025-08-04 16:37:49,191 - INFO - 🚀 Initiating website analysis...
+2025-08-04 16:39:06,764 - WARNING - ⚠️  Could not analyze https://testsaas.com after 77.57s: Internal Server Error: Failed to make POST request. (Internal server error) - Operation timed out - No additional error details provided.
+2025-08-04 16:39:06,765 - WARNING - 🔍 Error Type: <class 'aiohttp.client_exceptions.ClientError'>
+2025-08-04 16:39:06,765 - INFO - 🔄 Fallback hiring intent for https://testsaas.com: True (processed in 77.58s)
+2025-08-04 16:39:06,766 - INFO - 📊 LEAD SCORING:
+2025-08-04 16:39:06,766 - INFO -    🎯 Base Score (Hiring Intent): 30
+2025-08-04 16:39:06,767 - INFO -    ⭐ Bonus Score: 10
+2025-08-04 16:39:06,767 - INFO -    🏆 Total Score: 40
+2025-08-04 16:39:06,768 - INFO - 🔍 ANALYZING HIRING INTENT
+2025-08-04 16:39:06,768 - INFO - 🌐 Target Website: https://demosoftware.com
+2025-08-04 16:39:06,768 - INFO - 🚀 Initiating website analysis...
+2025-08-04 16:39:37,193 - WARNING - ⚠️  Could not analyze https://demosoftware.com after 30.43s: Internal Server Error: Failed to make POST request. (Internal server error) - An SSL error occurred while scraping the URL. If you're not inputting any sensitive data, try scraping with `skipTlsVerification: true`. - No additional error details provided.
+2025-08-04 16:39:37,194 - WARNING - 🔍 Error Type: <class 'aiohttp.client_exceptions.ClientError'>
+2025-08-04 16:39:37,194 - INFO - 🔄 Fallback hiring intent for https://demosoftware.com: False (processed in 30.43s)
+2025-08-04 16:39:37,195 - INFO - 📊 LEAD SCORING:
+2025-08-04 16:39:37,195 - INFO -    🎯 Base Score (Hiring Intent): 0
+2025-08-04 16:39:37,196 - INFO -    ⭐ Bonus Score: 5
+2025-08-04 16:39:37,196 - INFO -    🏆 Total Score: 5
+2025-08-04 16:39:37,196 - INFO - 🔍 ANALYZING HIRING INTENT
+2025-08-04 16:39:37,197 - INFO - 🌐 Target Website: https://mockplatform.com
+2025-08-04 16:39:37,197 - INFO - 🚀 Initiating website analysis...
+2025-08-04 16:40:08,358 - WARNING - ⚠️  Could not analyze https://mockplatform.com after 31.16s: Internal Server Error: Failed to make POST request. (Internal server error) - All scraping engines failed! -- Double check the URL to make sure it's not broken. If the issue persists, contact us at help@firecrawl.com. - No additional error details provided.
+2025-08-04 16:40:08,359 - WARNING - 🔍 Error Type: <class 'aiohttp.client_exceptions.ClientError'>
+2025-08-04 16:40:08,359 - INFO - 🔄 Fallback hiring intent for https://mockplatform.com: False (processed in 31.16s)
+2025-08-04 16:40:08,360 - INFO - 📊 LEAD SCORING:
+2025-08-04 16:40:08,360 - INFO -    🎯 Base Score (Hiring Intent): 0
+2025-08-04 16:40:08,361 - INFO -    ⭐ Bonus Score: 5
+2025-08-04 16:40:08,361 - INFO -    🏆 Total Score: 5

@@ -1,0 +1,28 @@
+# Defines the version of the Docker Compose file format.
+version: '3.8'
+
+# Defines the services that make up your application.
+services:
+  # FastAPI Backend Service
+  api:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    command: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8501", "--reload"]
+  
+  # Streamlit Frontend Service  
+  dashboard:
+    build: .
+    ports:
+      - "8502:8502"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    command: ["streamlit", "run", "dashboard.py", "--server.port=8502", "--server.address=0.0.0.0", "--browser.gatherUsageStats=false"]
+    depends_on:
+      - api
